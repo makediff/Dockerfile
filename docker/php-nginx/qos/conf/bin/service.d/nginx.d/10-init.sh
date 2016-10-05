@@ -18,3 +18,5 @@ else
     rm /opt/docker/etc/nginx/conf.d/10-php.conf
     rm /opt/docker/etc/nginx/vhost.common.d/10-php.conf
 fi
+
+cat /opt/docker/etc/hosts.conf >> /etc/hosts

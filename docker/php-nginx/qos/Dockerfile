@@ -23,6 +23,6 @@ RUN /usr/local/bin/apt-install \
     && /opt/docker/bin/provision run --tag bootstrap --role webdevops-nginx --role webdevops-php-nginx \
     && /opt/docker/bin/bootstrap.sh
 
-cat /opt/docker/hosts.conf >> /etc/hosts
+RUN cat /opt/docker/etc/hosts.conf >> /etc/hosts
 
 EXPOSE 80 443
